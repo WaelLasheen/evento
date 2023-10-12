@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: 'Merriweather', serif;
+    transition: .5s linear;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: #363537;
+}
+
+/* header */
+
+header{
+    background-color: #E3B505;
+    font-weight: bolder;
+    padding: .8rem 8%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#logo{
+    font-size: 22px;
+}
+#logo span{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+nav a{
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+    color: white;
+    margin-left: 10px;
+}
+nav a:hover{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+section{
+    margin: 100px 40px;
+}
+
+/* home */
+
+#home .content{
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    min-width: 70rem;
+}
+#home h3{
+    font-size: 4.5rem;
+    letter-spacing: 0.1em;
+}
+#home .content span{
+    color: blue;
+}
+#home .content img{
+    text-align: center;
+    min-width: 50rem;
+    margin: 1.5rem;
+    border-radius: 2rem;
+    border: #2C302E .3rem solid;
+}
+
+/* service */
+
+#service{
+    text-align: center;
+}
+#service .title{
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin: 5rem;
+}
+#service h3 span{
+    color: blue;
+}
+#service .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    align-items: center;
+}
+#service .grid-item{
+    height: 18rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#service .grid-item i{
+    font-size: 2rem;
+    color: #e7edec;
+}
+#service .grid-item h3{
+    font-size: 1.6rem;
+    color: #FFFD98;
+}
+#service .grid-item p{
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0px 28px;
+}
+
+
+/* about */
+
+#about h3{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin: 5rem;
+}
+#about h3 span{
+    color: blue;
+}
+
+#about .content {
+    margin-top: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#about .content div {
+    width: 50%;
+    height: 25rem;
+    /* border: 2px solid blanchedalmond; */
+}
+#about .content h3 {
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+}
+#about .content .about-content {
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+#about .content .about-content a{
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: gray;
+    border-radius: 15px;
+}
+#about .content .about-content a:hover{
+    font-size: 1.3rem;
+    background-color: blue;
+}
+
+#about .content img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3rem;
+}
+
+/* gallery */
+
+#gallery{
+    text-align: center;
+}
+#gallery h3{
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin: 5rem;
+}
+#gallery h3 span{
+    color: blue;
+}
+#gallery .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    align-items: center;
+}
+#gallery img{
+    max-width: 100%;
+    border: #171616 .5rem solid;
+    border-radius: 2.2rem;
+}
+
+/*price*/
+#price{
+    text-align: center;
+}
+#price h3{
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin: 5rem;
+}
+#price h3 span{
+    color: blue;
+}
+#price .price-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+#price .price-colum{
+    height: 25rem;
+    width: 20%;
+    padding: 2rem 0;
+    background-color: #515154;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2.5rem;
+}
+#price h2{
+    min-width: 100%;
+    background: #115697;
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+#price p{
+    font-size: 3rem;
+}
+#price li{
+    margin: .8rem;
+    list-style-type: none;
+}
+#price i{
+    margin-right: .5rem;
+    color: #2B4570;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#price  a{
+    padding: 10px;
+    max-width: fit-content;
+    font-size: 1.1rem;
+    background-color: gray;
+    border-radius: 15px;
+}
+#price a:hover{
+    font-size: 1.3rem;
+    background-color: blue;
+}
+
+/*review*/
+
+#review{
+    text-align: center;
+}
+#review h3{
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin: 5rem;
+}
+#review h3 span{
+    color: blue;
+}
+#review .client{
+    display: flex;
+    margin: 4rem 0;
+}
+#review .client img{
+    width: 5rem;
+    border-radius: 3rem;
+    margin-right: 2rem;
+}
+#review .client .info{
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: self-start;
+}
+#review .client .info h4{
+    font-size: 1.8rem;
+}
+#review .client .info h6{
+    font-size: .9rem;
+}
+#review p{
+    font-size: .9rem;
+    padding-right:6rem;
+}
+
+
+/* contact */
+
+#contact{
+    text-align: center;
+}
+#contact h3{
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    margin: 5rem;
+}
+#contact h3 span{
+    color: blue;
+}
+#contact form{
+    max-width: 80rem;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+#contact form div{
+    display: flex;
+    margin: .5rem;
+}
+#contact form div input , textarea{
+    width: 100%;
+    padding: .7rem;
+    border: #363537 solid 2px;
+    border-radius: 1.2rem;
+    background-color: dimgray;
+}
+#contact  a{
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: gray;
+    border-radius: 15px;
+}
+#contact a:hover{
+    font-size: 1.3rem;
+    background-color: blue;
+}
+
+/* footer */
+
+footer{
+    background-color: #171616;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+footer p{
+    font-size: 14px;
+    padding: .4rem;
+}
+footer p span{
+    color: blue;
+    font-weight: bold;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.colum{
+    display: flex;
+    flex-direction: column;
+}
+.colum:hover{
+    transform: scale(1.2);
+}
+.colum a{
+    margin: 0.5rem;
+}
+.colum a:hover{
+    font-size: 1.3rem;
+}
+
