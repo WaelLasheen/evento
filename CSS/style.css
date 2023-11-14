@@ -160,7 +160,7 @@ section{
 
 #about .content div {
     width: 50%;
-    height: 25rem;
+    /* height: 25rem; */
     /* border: 2px solid blanchedalmond; */
 }
 #about .content h3 {
@@ -439,4 +439,147 @@ footer p span{
 
 .color-option:hover {
     transform: scale(1.2);
+}
+
+
+
+/* Media query for screens up to 768px width */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: .8rem 4%;
+    }
+
+    #home .content {
+        min-width: unset;
+        padding: 1rem;
+    }
+
+    #home h3 {
+        font-size: 2.5rem;
+    }
+
+    #home .content img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+
+    #service .grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #service .grid-item {
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #about .content {
+        flex-direction: column;
+    }
+
+    #about .content div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #about .content h3 {
+        font-size: 1.8rem;
+    }
+
+    #about .content .about-content a {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    #gallery .grid-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #gallery img {
+        border: #363537 .3rem solid;
+        border-radius: 1rem;
+    }
+
+    #price .price-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #price .price-colum {
+        width: 80%;
+    }
+
+    #price h2 {
+        font-size: 1.5rem;
+    }
+
+    #price p {
+        font-size: 2rem;
+    }
+
+    #price li {
+        font-size: 1.2rem;
+    }
+
+    #price i {
+        font-size: 1rem;
+    }
+
+    #review .client {
+        flex-direction: column;
+    }
+
+    #review .client img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+    }
+
+    #review .client .info {
+        text-align: center;
+    }
+
+    #review .client .info h4 {
+        font-size: 1.5rem;
+    }
+
+    #review .client .info h6 {
+        font-size: 0.8rem;
+    }
+
+    #review p {
+        padding-right: 0;
+    }
+
+    #contact form {
+        max-width: 100%;
+    }
+
+    #contact form div {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    #contact form div input,
+    textarea {
+        width: 100%;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    #slideshow-container{
+        height: 20%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .slideshow-image{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
 }
